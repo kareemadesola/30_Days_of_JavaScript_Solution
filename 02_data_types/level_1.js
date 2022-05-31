@@ -14,11 +14,11 @@ console.log('Number 5')
 console.log(challenge.toLocaleLowerCase())
 // 6
 console.log('Number 6')
-console.log(challenge.substring(0,challenge.indexOf(' ')))
+console.log(challenge.substring(0, challenge.indexOf(' ')))
 console.log(challenge.substr(0, challenge.indexOf(' ')))
 // 7
 console.log('Number 7')
-console.log(challenge.substring(challenge.indexOf(' ')+ 1))
+console.log(challenge.substring(challenge.indexOf(' ') + 1))
 // 8
 console.log('Number 8')
 console.log(challenge.includes('Script'))
