@@ -104,8 +104,19 @@ const txt = `{
     }
 }
 `;
-
+// level 1
 console.log(JSON.stringify(skills));
 console.log(JSON.stringify(age));
 console.log(JSON.stringify(isMarried));
 console.log(JSON.stringify(student));
+
+// level 2
+console.log(JSON.stringify(student, ["firstName", "lastName", "skills"]));
+// level 3
+let parsedObject = JSON.parse(txt);
+console.log(parsedObject);
+// Question Ambiguous
+let parsedSkill = JSON.parse(txt, (key, value) => {
+  return key === "skills" ? value.length : value;
+});
+console.log(parsedSkill);
